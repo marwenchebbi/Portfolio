@@ -1,13 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { GithubIcon, LinkedinIcon, MailIcon } from "lucide-react";
 import Image from "next/image";
+import profile from "./images/profile.jpg";
 
 export function Hero() {
   return (
     <section id="home" className="py-24 flex flex-col items-center justify-center text-center">
       <div className="relative w-32 h-32 mb-8">
         <Image
-          src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=256&h=256&fit=crop"
+          src={profile}
           alt="Profile"
           fill
           className="rounded-full object-cover"
