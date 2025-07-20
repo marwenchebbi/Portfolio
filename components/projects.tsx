@@ -1,42 +1,27 @@
-<<<<<<< HEAD
 "use client";
 
-=======
->>>>>>> adcafdb37e1721bd711304b642182d64fc0e44c4
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ExternalLinkIcon, GithubIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Msign from "./images/1.png";
 import Ebooking from "./images/ebooking.png";
-<<<<<<< HEAD
 import Credit from "./images/credit.png";
 import CryptoWallet from "./images/crypto-wallet.png";
 import InvoiceMaker from "./images/invoice-maker.png";
-=======
-import Credit from "./images/credit.png"
->>>>>>> adcafdb37e1721bd711304b642182d64fc0e44c4
 
 
 
 const projects = [
   {
-<<<<<<< HEAD
     title: "Crypto Wallet App",
     description:
       "This project is a cross‑platform mobile application designed to manage a custom cryptocurrency within a secure and user‑friendly ecosystem. It allows users to seamlessly send and receive tokens, exchange them with USDT, and view detailed transaction histories in real time. The app features a rewards system through integration with the Trello project management platform.",
     image: CryptoWallet,
-=======
-    title: "Credit App",
-    description:
-      "A semester project developing an application fro managing credit purchases using Spring Boot and ReactJS with secured services and database integration.",
-    image: Credit,
->>>>>>> adcafdb37e1721bd711304b642182d64fc0e44c4
     github: "https://github.com/marwenchebbi/",
     demo: "#"
   },
   {
-<<<<<<< HEAD
     title: "Credit App",
     description:
       "A semester project developing an application fro managing credit purchases using Spring Boot and ReactJS with secured services and database integration. Includes Docker Compose configuration for local testing with PostgreSQL database and MailDev for email testing.",
@@ -162,29 +147,14 @@ volumes:
     image: InvoiceMaker,
     github: "https://github.com/marwenchebbi/invoice-maker",
     demo: "https://invoice-maker.netlify.app/"
-=======
-    title: "E-Booking Platform",
-    description:
-      "An online booking platform with Spring Boot and PostgreSQL backend, featuring flight and hotel reservation services.",
-    image: Ebooking,
-    github: "https://github.com/marwenchebbi/",
-    demo: "#"
->>>>>>> adcafdb37e1721bd711304b642182d64fc0e44c4
   },
   {
     title: "Msign Website",
     description:
-<<<<<<< HEAD
       "Improved website accessibility and performance for TunBraille, adding WCAG-compliant features with HTML, CSS, and JavaScript. Implemented CI/CD pipeline using GitHub Actions to automatically build and deploy the application to Firebase hosting.",
     image: Msign,
     github: "https://github.com/marwenchebbi/MSign_Company",
     demo: "https://msignproject-231a4.web.app/"
-=======
-      "Improved website accessibility and performance for TunBraille, adding WCAG-compliant features with HTML, CSS, and JavaScript.",
-    image: Msign,
-    github: "https://github.com/marwenchebbi/MSign_Company",
-    demo: "https://tunbraille.com"
->>>>>>> adcafdb37e1721bd711304b642182d64fc0e44c4
   }
 ];
 
@@ -215,7 +185,6 @@ export function Projects() {
                     Code
                   </a>
                 </Button>
-<<<<<<< HEAD
                 {project.demo !== "#" && (
                   <Button variant="outline" size="sm" asChild>
                     <a href={project.demo} target="_blank" rel="noopener noreferrer">
@@ -242,14 +211,6 @@ export function Projects() {
                     📋 Docker Compose
                   </Button>
                 )}
-=======
-                <Button variant="outline" size="sm" asChild>
-                  <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                    <ExternalLinkIcon className="h-4 w-4 mr-2" />
-                    Demo
-                  </a>
-                </Button>
->>>>>>> adcafdb37e1721bd711304b642182d64fc0e44c4
               </div>
             </CardContent>
           </Card>
