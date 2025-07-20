@@ -1,0 +1,47 @@
+services:
+  postgres:
+    container_name: postgres-sql-dt-e-booking
+    image: postgres
+    environment:
+      POSTGRES_USER: username
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: e-booking-db
+      PGDATA: /var/lib/postgresql/data
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - myNetwork
+
+  e-booking-back:
+    container_name: spring-boot-app
+    image: marwenchebbi/e-booking-back:latest
+    ports:
+      - "8075:8075"
+    depends_on:
+      - postgres
+    restart: unless-stopped
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/e-booking-db
+      SPRING_DATASOURCE_USERNAME: username
+      SPRING_DATASOURCE_PASSWORD: password
+    networks:
+      - myNetwork
+  e-booking-front:
+    container_name: e-booking-front
+    image: marwenchebbi/e-booking-front:latest
+    ports:
+      - "4200:4200"
+    depends_on:
+      - e-booking-back
+    networks:
+      - myNetwork
+
+networks:
+  myNetwork:
+    driver: bridge
+
+volumes:
+  postgres-data:
+    driver: local
