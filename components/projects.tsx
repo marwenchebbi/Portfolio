@@ -145,7 +145,7 @@ volumes:
       "A web-based invoice creation tool with a clean, user-friendly interface. Features include customizable billing information, itemized lists, tax and discount calculations, multiple currency support, and professional invoice generation.",
     image: InvoiceMaker,
     github: "https://github.com/marwenchebbi/invoice-maker",
-    demo: "https://invoice-maker.netlify.app/"
+    demo: "https://marwenchebbi.github.io/invoice-maker/"
   },
   {
     title: "Msign Website",
