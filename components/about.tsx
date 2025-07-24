@@ -9,11 +9,7 @@ export function About() {
             scalable and efficient solutions. I have experience in collaborative and personal projects, including web and mobile 
             applications, with a strong adherence to best practices and eagerness to contribute to innovative software solutions.
           </p>
-          <p>
-            My expertise spans full-stack development, blockchain technology, and modern web frameworks. I have successfully 
-            implemented cross-platform mobile applications, microservices architectures, and CI/CD pipelines. I am particularly 
-            interested in blockchain development, smart contracts, and creating user-friendly applications that solve real-world problems.
-          </p>
+
         </div>
         <div className="mt-12">
           <h3 className="text-2xl font-semibold mb-6">Skills</h3>

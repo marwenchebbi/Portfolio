@@ -15,8 +15,7 @@ import InvoiceMaker from "./images/invoice-maker.png";
 const projects = [
   {
     title: "Crypto Wallet App",
-    description:
-      "This project is a cross‑platform mobile application designed to manage a custom cryptocurrency within a secure and user‑friendly ecosystem. It allows users to seamlessly send and receive tokens, exchange them with USDT, and view detailed transaction histories in real time. The app features a rewards system through integration with the Trello project management platform.",
+    description:"For my final year project at the National Engineering School of Sousse, I built a cross‑platform mobile application that manages a custom cryptocurrency, enabling secure token transfers and seamless exchanges with USDT. Designed to integrate with a company’s internal systems, the app initially experienced low employee adoption. To solve this, I integrated Trello’s API, rewarding users with cryptocurrency for completing project tasks. This innovation increased app engagement by 30% during testing and boosted productivity by aligning incentives with company goals.",
     image: CryptoWallet,
     github: "https://github.com/marwenchebbi/",
     demo: "#"
